@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="gallery">
+          <div class="image" id="image1" onclick="registerUser(event)">
+            <img src="hotel-3 (1).jpg" alt="Image 1" />
+          </div>
+          <div class="image" id="image2" onclick="displayUserInfo()" disabled>
+            <img src="hotel-2 (1).jpg" alt="Image 2" />
+          </div>
+          <div class="image" id="image3" onclick="rollDice()" disabled>
+            <img src="hotel-1 (1).jpg" alt="Image 3" />
+          </div>
+          <div class="image" id="image4" onclick="generateCoupon()" disabled>
+            <img src="user-1 (1).jpg" alt="Image 4" />
+          </div>
+        </div>
+        <div id="formContainer" class="hidden">
+          <h2>Register</h2>
+          <form id="registerForm" onsubmit="register(event);">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" required /><br /><br />
+            <label for="username">Username:</label>
+            <input type="text" id="username" required /><br /><br />
+            <button>Submit</button>
+          </form>
+        </div>
+        <div id="infoContainer" class="hidden">
+          <h2>User Info</h2>
+          <div id="userInfo"></div>
+        </div>
+
+        <div id="diceContainer" class="hidden">
+          <h2>Dice Roll</h2>
+          <div id="diceResult"></div>
+        </div>
+
+        <div id="couponContainer" class="hidden">
+          <h2>Congratulations!</h2>
+          <div id="coupon"></div>
+        </div>
+        <div id="messageContainer" class="hidden">
+          <div id="message"></div>
+        </div>
+
+        <img
+          id="congratsImage"
+          class="hidden"
+          src="images/congrats-image.jpg"
+          alt="Congratulations"
+        />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

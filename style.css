@@ -1,0 +1,36 @@
+body {
+   
+    text-align: center;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+ 
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .image img {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #formContainer, #infoContainer, #diceContainer, #couponContainer, #messageContainer, #congratsImage {
+    margin-top: 20px;
+  }
+  #registerForm button{
+    height:2rem;
+    width: 6rem;
+    background-color: rgba(191, 74, 32, 0.855);
+  }
+  
